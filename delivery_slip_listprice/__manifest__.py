@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Delivery Slip – List Price & Totals',
+    'name': 'Delivery Slip List Price',
     'version': '18.0.1.0.0',
     'summary': 'Adds a List Price column and Grand Total to the Delivery Slip report',
     'description': """
