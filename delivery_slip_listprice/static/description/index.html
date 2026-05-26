@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/></head>
+<body>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan" style="color:#875A7B;">Delivery Slip – List Price &amp; Totals</h2>
+    <h3 class="oe_slogan">Show the selling price of every outbound item on the delivery slip</h3>
+    <div class="oe_span12">
+      <p class="oe_mt32 text-center">
+        Extends the standard Odoo 18 Delivery Slip to add a <strong>List Price</strong>
+        (public selling price) column and a <strong>Grand Total</strong> — across all
+        three table variants that can appear on a delivery slip.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">Covers all three table types</h2>
+    <div class="oe_span4">
+      <h3>Aggregated moves</h3>
+      <p>Products without serial/lot tracking — handled via Odoo 18's dict-based aggregated line format.</p>
+    </div>
+    <div class="oe_span4">
+      <h3>Serial-tracked moves</h3>
+      <p>Products tracked by serial number — rendered as individual records with monetary formatting.</p>
+    </div>
+    <div class="oe_span4">
+      <h3>Done moves + Grand Total</h3>
+      <p>Validated transfer quantities with a grand total footer: Σ (list_price × qty_done).</p>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">Technical notes</h2>
+    <div class="oe_span12">
+      <ul>
+        <li><strong>Zero Python</strong> — four XPath overrides with <code>priority="300"</code>.</li>
+        <li>Uses <code>product.list_price</code> — the pricelist-independent public price.</li>
+        <li>Compatible with Odoo 18 Community and Enterprise.</li>
+        <li>Depends only on <code>stock</code>.</li>
+      </ul>
+      <p>Looking for <strong>cost price</strong> instead? See the companion module
+        <em>Delivery Slip – Unit Cost &amp; Totals</em>.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
