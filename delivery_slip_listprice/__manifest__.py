@@ -28,7 +28,7 @@ Related module: **Delivery Slip Unit Cost** (shows cost price instead).
         'report/report_deliveryslip_listprice.xml',
     ],
     'images': ['static/description/banner.png'],
-    'price': 1.99,
+    'price': 0,
     'currency': 'EUR',
     'installable': True,
     'auto_install': False,
