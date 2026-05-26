@@ -16,7 +16,7 @@ Covers all three table variants that appear on a delivery slip:
 No Python code — pure QWeb template inheritance. Zero performance impact.
 Compatible with Odoo 18 Community and Enterprise.
 
-Related module: **Delivery Slip – Unit Cost & Totals** (shows cost price instead).
+Related module: **Delivery Slip Unit Cost** (shows cost price instead).
     """,
     'author': 'Bitquanta',
     'website': 'https://sebenz.co.za',
@@ -28,6 +28,8 @@ Related module: **Delivery Slip – Unit Cost & Totals** (shows cost price inste
         'report/report_deliveryslip_listprice.xml',
     ],
     'images': ['static/description/banner.png'],
+    'price': 15.00,
+    'currency': 'EUR',
     'installable': True,
     'auto_install': False,
     'application': False,
